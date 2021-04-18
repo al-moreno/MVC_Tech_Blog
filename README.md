@@ -31,15 +31,12 @@ Built a CMS-style blog site similar to a Wordpress site, where developers can pu
 Visit the website on Heroku. You can view posts and visit links as a visitor, create your own account, and as an authenticated user you can add your own posts and comment on other posts as well. You can edit titles and content or delete your own posts as well. You can also update your username, email, and password.
 
 
-GitHub: https://github.com/al-moreno/Tech_Blog
+GitHub: https://github.com/al-moreno/MVC_Tech_Blog
+Old repository with previous commits. Had issue with sequelize and was unable to resolve problem even after troublshooting https://github.com/al-moreno/Tech_Blog
+    
 
-Video Walk Through: pending
 
-![Animation](./Assets/14-mvc-homework-demo-01.gif) 
 
-![Picture] pending
-
-![Picture]pending
 
 ## Deployment
 
