@@ -32,7 +32,8 @@ Visit the website on Heroku. You can view posts and visit links as a visitor, cr
 
 
 GitHub: https://github.com/al-moreno/MVC_Tech_Blog
-Old repository with previous commits. Had issue with sequelize and was unable to resolve problem even after troublshooting https://github.com/al-moreno/Tech_Blog
+
+Old repository with previous commits. Had issue with sequelize and was unable to resolve problem even after troubleshooting https://github.com/al-moreno/Tech_Blog
     
 
 
