@@ -4,27 +4,27 @@ const userData = [
   {
     username: "Cesar",
     email: "cesar@gmail.com",
-    password: "password1234"
+    password: "testpassword1"
   },
   {
     username: "Denis",
     email: "denis@gmail.com",
-    password: "password1234"
+    password: "testpassword2"
   },
   {
     username: "George",
     email: "George@gmail.com",
-    password: "password1234"
+    password: "testpassword3"
   },
   {
     username: "Matthew",
     email: "matthew@gmail.com",
-    password: "password1234"
+    password: "testpassword4"
   },
   {
     username: "Rachel",
     email: "rachel@gmail.com",
-    password: "password1234"
+    password: "testpassword5"
   }
 ];
 

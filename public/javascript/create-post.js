@@ -1,41 +1,27 @@
-// A function to edit a post
+
 async function editFormHandler(event) {
   event.preventDefault();
 
-  // Get the user name, user id, email, and password from the form
-  let username = document.querySelector('input[name="user-name"]').value.trim();
-  if(username.length) username = '"username": "' + username + '"';
-  let email = document.querySelector('input[name="email"]').value.trim();
-  if(email.length) email = '"email": "' + email + '"';
-  let password = document.querySelector('input[name="password"]').value.trim();
-  if (!password.length) {
-      alert('You must enter your current password to confirm changes or enter a new password.');
-      return
-  } else {
-      password = '"password": "' + password + '"';
-  }
-  const id = document.querySelector('input[name="user-id"]').value;
 
-  let userUpdate = '{' + [username, email, password].filter(value => value).join(',') + '}';
- 
-  userUpdate = JSON.parse(userUpdate)
+  const title = document.querySelector('input[name="post-title"]').value;
+  const post_content = document.querySelector('input[name="post-content"]').value;
 
+  const response = await fetch(`/api/posts`, {
+    method: 'POST',
+    body: JSON.stringify({
+      title,
+      post_content
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
 
-  const response = await fetch(`/api/users/${id}`, {
-      method: 'PUT',
-      body: JSON.stringify(userUpdate),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-  
   if (response.ok) {
-      document.location.replace('/dashboard');
-     
-      } else {
-      alert(response.statusText);
-      }
-
+    document.location.replace('/dashboard');
+  } else {
+    alert(response.statusText);
+  }
 }
 
-document.querySelector('.edit-user-form').addEventListener('submit', editFormHandler);
+document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
