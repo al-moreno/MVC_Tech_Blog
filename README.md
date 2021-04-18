@@ -30,7 +30,7 @@ Built a CMS-style blog site similar to a Wordpress site, where developers can pu
 ## Usage / Installation
 Visit the website on Heroku. You can view posts and visit links as a visitor, create your own account, and as an authenticated user you can add your own posts and comment on other posts as well. You can edit titles and content or delete your own posts as well. You can also update your username, email, and password.
 
-Heroku: https://git.heroku.com/safe-fjord-85999.git 
+Heroku: https://safe-fjord-85999.herokuapp.com/
 
 
 GitHub: https://github.com/al-moreno/MVC_Tech_Blog
